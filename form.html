@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(https://w0.peakpx.com/wallpaper/468/927/HD-wallpaper-parrot-os-parrot-security.jpg);
+            background-size: cover;
+            /* background-size: 280%; */
+            /* background-position: -400px 0px; */
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        div.main {
+            width: 450px;
+            margin: 50px 300px 0px auto;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 10px;
+            font-family: sans-serif;
+        }
+
+        div.register {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(3, 248, 215, 0.3);
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+
+        form#register {
+            margin: 30px;
+        }
+
+        #lable {
+            font-family: sans-serif;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        input#name {
+            width: 300px;
+            border: 1px solid #04fdc7;
+            border-radius: 3px;
+            outline: 0;
+            margin-left: 35px;
+            padding: 5px;
+            background-color: #f7fafa;
+            color: black;
+            box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        input#submit {
+            width: 150px;
+            padding: 7px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 600;
+            border: none;
+            border-radius: 3px;
+            background-color: rgba(250, 29, 0, 0.932);
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            border-radius: 15px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        input#reset {
+            width: 150px;
+            padding: 7px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 600;
+            border: none;
+            border-radius: 3px;
+            background-color: rgba(252, 35, 7, 0.959);
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            border-radius: 15px;
+            transition: all 0.2s ease-in-out;
+            /* display: inline; */
+        }
+
+        input#reset:hover {
+            background-color: rgb(66, 245, 12);
+
+
+        }
+
+        input#submit:hover {
+            background-color: rgb(13, 245, 13);
+        }
+
+        label,
+        span,
+        h2 {
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="register">
+            <h2>Registration_Form</h2>
+            <form action="javascript" id="register" method="post">
+                <label for="">Name:</label>
+                <br>
+                <input type="text" name="fname" id="name" placeholder="Enter your name">
+                <br><br>
+                <label for="">Father's name:</label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Enter your Father's name">
+                <br><br>
+                <label for="">Mother's name:</label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Enter your Mother's name">
+                <br><br>
+                <label for="">Date-of-birth:</label>
+                <br>
+                <input type="date" name="bdate" id="name" placeholder="Enter your birth date">
+                <br><br>
+                <label for="">Gender:</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Gender" id="male">
+                &nbsp;&nbsp;
+                <span>Male</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Gender" id="female">
+                &nbsp;&nbsp;
+                <span>Female</span>
+                <br><br>
+                <label for="">Email ID:</label>
+                <br>
+                <input type="email" name="Email ID" id="name" placeholder="Enter your valid email">
+                <br><br>
+                <label for="">Mobile-no:</label>
+                <br>
+                <input type="number" name="Mobile-no" id="name" placeholder="Enter your valid number">
+                <br><br>
+                <label for="">Address:</label>
+                <br>
+                <input type="text" name="address" id="name" placeholder="Enter your address">
+                <br><br>
+                <label for="">State:</label>
+                <br>
+                <input type="text" name="State" id="name" placeholder="Enter your state name">
+                <br><br>
+                <label for="">City:</label>
+                <br>
+                <input type="text" name="City" id="name" placeholder="Enter your city name">
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" value="Submit" name="submit" id="submit">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <input type="reset" value="Reset" name="reset" id="reset">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
